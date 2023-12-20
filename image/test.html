@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="toggleVisibility()">Click Me!</button>
+
+<script>
+function toggleVisibility() {
+  var demoElement = document.getElementById('demo');
+  
+  // Toggle between 'none' and 'block'
+  demoElement.style.display = (demoElement.style.display === 'none' || demoElement.style.display === '') ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
